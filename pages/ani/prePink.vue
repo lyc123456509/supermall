@@ -3,11 +3,11 @@
 		<main>
 			<div class="ani_box">
 				<div class="tips" v-if="currentType === ''" :style="{
-		          background: `url(@/static/image/preGreen/preGreen_box.webp) no-repeat`,
+		          background: `url(./static/image/preGreen/preGreen_box.webp) no-repeat`,
 		          backgroundSize: 'contain',
 		        }"></div>
 				<div class="tips tipsOk" v-if="tipsSuccess" :style="{
-		          background: `url(@/static/image/preGreen/preGreenOk.png) no-repeat`,
+		          background: `url(./static/image/preGreen/preGreenOk.png) no-repeat`,
 		          backgroundSize: '100% 100%',
 		        }"></div>
 				<img class="light" src="@/static/image/preGreen/light.png" />
