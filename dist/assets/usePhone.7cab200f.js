@@ -1,0 +1,1 @@
+import{d as e}from"./pay.a20ebb39.js";import{E as r}from"./index.1388b7ca.js";function u(){const u=r();let t="";return u.currentRoute.value.query.phone&&(t=11!==u.currentRoute.value.query.phone.length?e(u.currentRoute.value.query.phone):u.currentRoute.value.query.phone),t}export{u};

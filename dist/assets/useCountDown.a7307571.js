@@ -1,0 +1,1 @@
+import{r as e,o as a}from"./index.1388b7ca.js";const o=(o=15,t=1e3)=>{const r=e(60*o),u=e({hour:`${o}`,minute:o.toString(),second:"00"}),l=e();return a((()=>{l.value=setInterval((()=>{if(r.value--,r.value>=0){const e=Math.floor(r.value/60),a=r.value%60;u.value={hour:"00",minute:e<10?`0${e}`:`${e}`,second:a<10?`0${a}`:`${a}`}}else clearInterval(l.value)}),t)})),u};export{o as u};
