@@ -1,0 +1,10 @@
+{ 
+    "applinks": { 
+        "apps": [],
+        "details": [ 
+            { "appID": "P83R52A6AV.com.jlwy.yswy", "paths": [ "/jlwy/*" ] }, 
+            { "appID": "P83R52A6AV.com.kdds.yswy", "paths": [ "/kdds/*" ] },
+            { "appID": "P83R52A6AV.com.sqjl.yswy", "paths": [ "/sqjl/*" ] }
+        ] 
+    } 
+}

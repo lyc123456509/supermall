@@ -1,2 +1,48 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>展示页面</title><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel=stylesheet href=./static/index.97465e7b.css></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script src=./static/js/chunk-vendors.2f8d7fbe.js></script><script src=./static/js/index.b2a25daa.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no" />
+    <!-- <meta name="referrer" content="no-referrer-when-downgrade" /> -->
+    <title>您有一份会员权益</title>
+    <script type="module" crossorigin src="/assets/index.f5d4794c.js"></script>
+    <link rel="stylesheet" href="/assets/index.bb811c66.css">
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      });
+
+      var lastTouchEnd = 0;
+
+      document.addEventListener(
+        'touchend',
+        function (event) {
+          var now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+
+          lastTouchEnd = now;
+        },
+        false,
+      );
+
+      document.addEventListener('gesturestart', function (event) {
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

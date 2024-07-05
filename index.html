@@ -2,19 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-    </script>
-    <title></title>
-    <!--preload-links-->
-    <!--app-context-->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no" />
+    <!-- <meta name="referrer" content="no-referrer-when-downgrade" /> -->
+    <title>您有一份会员权益</title>
   </head>
   <body>
-    <div id="app"><!--app-html--></div>
-    <script type="module" src="/main.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      });
+
+      var lastTouchEnd = 0;
+
+      document.addEventListener(
+        'touchend',
+        function (event) {
+          var now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+
+          lastTouchEnd = now;
+        },
+        false,
+      );
+
+      document.addEventListener('gesturestart', function (event) {
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
