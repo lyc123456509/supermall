@@ -38,14 +38,14 @@
       <div class="playBtn">
         <div
           class="playBtnItem"
-          style="background-image: url(/src/assets/armBandit/btn.webp)"
+          :style="`background-image: url(${btn})`"
           @click="btnHandle"
           :class="btnFlag ? 'btnAni' : ''"
         ></div>
         <div
           class="btn_hand handAni"
           @click="btnHandle"
-          style="background-image: url('./assets/armBandit/hand.webp')"
+          :style="`background-image: url(${hand})`"
           v-show="btnFlag"
         ></div
       ></div>
@@ -54,7 +54,7 @@
       <div class="popup_wrap">
         <div
           class="btn"
-          style="background-image: url(/src/assets/armBandit/fef2d5aba45d459c8850151420d62834.webp)"
+          :style="`background-image: url(${line})`"
           @click="btnJumpToNext"
         ></div>
       </div>
@@ -71,6 +71,9 @@
 </template>
 
 <script setup lang="ts">
+  import hand from "/@/assets/armBandit/hand.webp"
+  import btn from "/@/assets/armBandit/btn.webp"
+  import line from "/@/assets/armBandit/fef2d5aba45d459c8850151420d62834.webp"
   import { goodsList1, goodsList2, goodsList3 } from './index';
   const leftRef = ref();
   const midRef = ref();

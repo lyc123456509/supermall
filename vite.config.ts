@@ -48,6 +48,7 @@ export default function ({ mode }: ConfigEnv): UserConfigExport {
     base: './',
     build: {
       minify: 'terser',
+      assetsDir: 'assets',
       terserOptions: {
         compress: {
           //生产环境时移除console
