@@ -1,1 +1,1 @@
-const s="/assets/cj_bt.6b8cea47.png",a="/assets/icon_wait.d73c544c.png",c="/assets/small_box.ed536c3f.png";export{a as _,s as a,c as b};
+const e=""+new URL("cj_bt.6b8cea47.png",import.meta.url).href,a=""+new URL("icon_wait.d73c544c.png",import.meta.url).href,r=""+new URL("small_box.ed536c3f.png",import.meta.url).href;export{a as _,e as a,r as b};

@@ -1,1 +1,1 @@
-const s="/assets/gx.37c41919.png",a="/assets/waitGet.44231e90.png",t="/assets/btn_lq.8735ff4a.png";export{t as _,s as a,a as b};
+const e=""+new URL("gx.37c41919.png",import.meta.url).href,t=""+new URL("waitGet.44231e90.png",import.meta.url).href,r=""+new URL("btn_lq.8735ff4a.png",import.meta.url).href;export{r as _,e as a,t as b};

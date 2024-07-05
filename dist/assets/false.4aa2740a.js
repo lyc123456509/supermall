@@ -1,1 +1,1 @@
-const s="/assets/true.134595f1.png",a="/assets/false.f404791a.png";export{s as _,a};
+const e=""+new URL("true.134595f1.png",import.meta.url).href,r=""+new URL("false.f404791a.png",import.meta.url).href;export{e as _,r as a};

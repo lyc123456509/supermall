@@ -1,1 +1,1 @@
-const s="/assets/waitGet.23be41a6.png",a="/assets/true.274b3208.png",t="/assets/false.77053cad.png",e="/assets/csj.824277bc.png",b="/assets/btn_lq.735fb7b8.png";export{b as _,s as a,a as b,t as c,e as d};
+const e=""+new URL("waitGet.23be41a6.png",import.meta.url).href,r=""+new URL("true.274b3208.png",import.meta.url).href,t=""+new URL("false.77053cad.png",import.meta.url).href,a=""+new URL("csj.824277bc.png",import.meta.url).href,n=""+new URL("btn_lq.735fb7b8.png",import.meta.url).href;export{n as _,e as a,r as b,t as c,a as d};

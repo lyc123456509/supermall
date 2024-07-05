@@ -45,6 +45,7 @@ export default function ({ mode }: ConfigEnv): UserConfigExport {
       },
     },
     plugins: createVitePlugins(mode),
+    base: './',
     build: {
       minify: 'terser',
       terserOptions: {

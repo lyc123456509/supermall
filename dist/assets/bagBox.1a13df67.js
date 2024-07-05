@@ -1,1 +1,0 @@
-import{V as o}from"./index.478ce64d.js";function e(e,a){return o("/blindBox/getGoods",{method:"GET",params:e,baseURL:a})}function a(e,a){return o("/blindBox/getGradeGoods",{method:"GET",params:e,baseURL:a})}export{a,e as g};

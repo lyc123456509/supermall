@@ -1,1 +1,1 @@
-const s="/assets/paySuccess.ff38ef64.png";export{s as _};
+const e=""+new URL("paySuccess.ff38ef64.png",import.meta.url).href;export{e as _};
