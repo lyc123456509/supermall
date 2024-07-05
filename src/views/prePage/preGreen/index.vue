@@ -17,7 +17,7 @@
           backgroundSize: '100% 100%',
         }"
       ></div>
-      <img class="light" src="/@/assets/preGreen/light.png" />
+      <img class="light" src="@/assets/preGreen/light.png" />
       <div class="box" v-if="currentType === ''">
         <div
           class="item"
@@ -51,7 +51,7 @@
           @click="itemClick('middle')"
           ><div
             :style="{
-              background: `url(${
+              backgroundImage: `url(${
                 currentType === 'middle' ? five : currentType === 'right' ? oneOpen : two
               })`,
               backgroundSize: `100% 100%`,
@@ -73,7 +73,7 @@
           @click="itemClick('right')"
           ><div
             :style="{
-              background: `${
+              backgroundImage: `url(${
                 currentType === 'middle' ? oneOpen : five
               })`,
               backgroundSize: `100% 100%`,
@@ -97,7 +97,7 @@
           @click="itemClick('left')"
           ><div
             :style="{
-              background: `url(${
+              backgroundImage: `url(${
                 currentType === 'middle' || currentType === 'right' ? two : oneOpen
               })`,
               backgroundSize: `100% 100%`,
@@ -116,13 +116,13 @@
         <div class="number">{{ state.number }}</div>
         <div class="inputBox">
           <div class="icon">
-            <img src="/@/assets/preGreen/phone.png" alt="" />
+            <img src="@/assets/preGreen/phone.png" alt="" />
           </div>
           <nut-input type="tel" v-model="phone" placeholder="请输入您的手机号码" maxLength="11" :border="false" class="input" />
         </div>
         <div class="btn" @click="btnHandle"></div>
         <div class="hand" :style="{ opacity: state.phoneStatus ? '1' : '0' }">
-          <img src="/@/assets/preGreen/hand.webp" alt="" />
+          <img src="@/assets/preGreen/hand.webp" alt="" />
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
 
 <script setup lang="ts">
   import preGreenOk from "/@/assets/preGreen/preGreenOk.png"
-  import preGreen_box from "/@/assets/preGreen/preGreenBox_open.png"
+  import preGreen_box from "/@/assets/preGreen/preGreen_box.webp"
   import two from "/@/assets/preGreen/hf-20.png"
   import five from "/@/assets/preGreen/hf-50.png"
   import oneOpen from "/@/assets/preGreen/hf-100-open.png"
