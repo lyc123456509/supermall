@@ -5,7 +5,7 @@
         class="tips"
         v-if="currentType === ''"
         :style="{
-          background: `url(/src/assets/preGreen/preGreen_box.webp) no-repeat`,
+          background: `url(${preGreen_box}) no-repeat`,
           backgroundSize: 'contain',
         }"
       ></div>
@@ -13,11 +13,11 @@
         class="tips tipsOk"
         v-if="state.tipsSuccess"
         :style="{
-          background: `url(/src/assets/preGreen/preGreenOk.png) no-repeat`,
+          background: `url(${preGreenOk}) no-repeat`,
           backgroundSize: '100% 100%',
         }"
       ></div>
-      <img class="light" src="/src/assets/preGreen/light.png" />
+      <img class="light" src="/@/assets/preGreen/light.png" />
       <div class="box" v-if="currentType === ''">
         <div
           class="item"
@@ -51,9 +51,9 @@
           @click="itemClick('middle')"
           ><div
             :style="{
-              background: `url(/src/assets/preGreen/hf-${
-                currentType === 'middle' ? '50' : currentType === 'right' ? '100-open' : '20'
-              }.png)`,
+              background: `url(${
+                currentType === 'middle' ? five : currentType === 'right' ? oneOpen : two
+              })`,
               backgroundSize: `100% 100%`,
             }"
             class="positive"
@@ -73,9 +73,9 @@
           @click="itemClick('right')"
           ><div
             :style="{
-              background: `url(/src/assets/preGreen/hf-${
-                currentType === 'middle' ? '100-open' : '50'
-              }.png)`,
+              background: `${
+                currentType === 'middle' ? oneOpen : five
+              })`,
               backgroundSize: `100% 100%`,
             }"
             class="positive"
@@ -97,9 +97,9 @@
           @click="itemClick('left')"
           ><div
             :style="{
-              background: `url(/src/assets/preGreen/hf-${
-                currentType === 'middle' || currentType === 'right' ? '20' : '100-open'
-              }.png)`,
+              background: `url(${
+                currentType === 'middle' || currentType === 'right' ? two : oneOpen
+              })`,
               backgroundSize: `100% 100%`,
             }"
             class="positive"
@@ -116,13 +116,13 @@
         <div class="number">{{ state.number }}</div>
         <div class="inputBox">
           <div class="icon">
-            <img src="/src/assets/preGreen/phone.png" alt="" />
+            <img src="/@/assets/preGreen/phone.png" alt="" />
           </div>
           <nut-input type="tel" v-model="phone" placeholder="请输入您的手机号码" maxLength="11" :border="false" class="input" />
         </div>
         <div class="btn" @click="btnHandle"></div>
         <div class="hand" :style="{ opacity: state.phoneStatus ? '1' : '0' }">
-          <img src="/src/assets/preGreen/hand.webp" alt="" />
+          <img src="/@/assets/preGreen/hand.webp" alt="" />
         </div>
       </div>
     </div>
@@ -130,6 +130,11 @@
 </template>
 
 <script setup lang="ts">
+  import preGreenOk from "/@/assets/preGreen/preGreenOk.png"
+  import preGreen_box from "/@/assets/preGreen/preGreenBox_open.png"
+  import two from "/@/assets/preGreen/hf-20.png"
+  import five from "/@/assets/preGreen/hf-50.png"
+  import oneOpen from "/@/assets/preGreen/hf-100-open.png"
   import { Toast } from '@nutui/nutui';
   let aniStyle = ref(false);
   let aniOverSty = ref(0);
@@ -334,7 +339,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            background: url(/src/assets/preGreen/preGreenTips.webp);
+            background: url(/@/assets/preGreen/preGreenTips.webp);
             background-size: 100% 100%;
             // transform: rotateY(-180deg);
           }
@@ -348,15 +353,15 @@
             top: 0;
           }
           .p1 {
-            background: url(/src/assets/preGreen/hf-100.png);
+            background: url(/@/assets/preGreen/hf-100.png);
             background-size: 100% 100%;
           }
           .p2 {
-            background: url(/src/assets/preGreen/hf-50.png);
+            background: url(/@/assets/preGreen/hf-50.png);
             background-size: 100% 100%;
           }
           .p3 {
-            background: url(/src/assets/preGreen/hf-20.png);
+            background: url(/@/assets/preGreen/hf-20.png);
             background-size: 100% 100%;
           }
           .click_back {
