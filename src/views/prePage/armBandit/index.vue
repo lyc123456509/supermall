@@ -45,7 +45,7 @@
         <div
           class="btn_hand handAni"
           @click="btnHandle"
-          style="background-image: url('/src/assets/armBandit/hand.webp')"
+          style="background-image: url('./assets/armBandit/hand.webp')"
           v-show="btnFlag"
         ></div
       ></div>
@@ -321,7 +321,7 @@
           height: 1.3rem;
           left: 1rem;
           top: 1rem;
-          background-image: url(/src/assets/armBandit/hand.webp);
+          background-image: url(/@/assets/armBandit/hand.webp);
           background-repeat: no-repeat;
           background-size: cover;
           background-size: 100% 100%;
@@ -333,7 +333,7 @@
   .popup_wrap {
     width: 100%;
     height: 100%;
-    background-image: url(/src/assets/armBandit/ac0240b0ec104b35901c59e16d70dc71.webp);
+    background-image: url(/@/assets/armBandit/ac0240b0ec104b35901c59e16d70dc71.webp);
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-size: 100% auto;
